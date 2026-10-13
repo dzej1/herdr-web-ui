@@ -21,6 +21,13 @@
   scrollbar-width: none;
 }
 
+/* the soft keyboard covers the home indicator: the bar sits just above the keyboard, with no
+   empty band of the inset between them (as the composer does, Composer.css) */
+[data-keyboard] .key-bar {
+  height: var(--keybar-h);
+  padding-bottom: 0;
+}
+
 .key-bar::-webkit-scrollbar {
   display: none;
 }
